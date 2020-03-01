@@ -1,0 +1,234 @@
+/*========== Fonts =========*/
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url('./assets/lato-v16-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('./assets/lato-v16-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('./assets/lato-v16-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url('./assets/lato-v16-latin-900.woff2') format('woff2');
+}
+
+/*========== Body ==========*/
+
+body {
+  width: 1020px;
+}
+
+/*========== Portfolio ==========*/
+
+.portfolio {
+  height: 870px;
+  background-color:  #2d303a;
+}
+
+.portfolio-logo {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  padding: 72px 0 0 40px;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-text{
+  width: 940px;
+  padding-left: 40px; 
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  padding-top: 27px;
+}
+
+.menu {
+  width: 350px;
+  margin: 0;
+  padding-left: 41px;
+  padding-top: 8px;
+}
+
+ .menu li {
+  display: inline-block; 
+  margin-right: 6px; 
+}
+
+.menu a {
+  padding: 7px; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  display: block; /* Блочная ссылка */
+  white-space: nowrap; /* Запрещаем перенос текста */
+  border: 1px solid #767e9e;
+  border-radius: 5px; 
+  font-size: 11px;
+  line-height: 7px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.035em;
+ }
+
+ .menu a:hover {
+  border: 1px solid white;
+  color: white;
+ }
+
+.portfolio-image {
+  width: 940px;
+  margin-left: 39px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  /*overflow: hidden;*/
+}
+
+.portfolio-image-block {
+  width: 220px;
+  height: 616px;
+  overflow: hidden;
+}
+
+.portfolio-image-block img {
+  width: 220px;
+  height: 187px;
+  margin-right: 5px;
+  margin-bottom: 17px;
+}
+
+.portfolio-line {
+  width: 1020px;
+  height: 6px;
+  margin-top: 54px;
+  background-color:#323746;
+}
+
+/*========== AboutUs ==========*/
+
+.about {
+  height: 728px;  
+  margin: auto;
+  background-color: #f2f2f2;
+}
+
+.about-title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 39px;
+  /*letter-spacing: -0.01em;*/
+}
+
+.about-text {
+  width: 980px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  padding-top: 27px;
+  padding-left: 39px;
+}
+
+.about-photo {
+  width: 939px;
+  height: 406px;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 45px;
+  padding-left: 39px;
+}
+
+.about-photo-block {
+  width: 300px;
+  height: 301px;
+}
+
+.about-photo-block-img {
+  height: 300px;
+  width: 301px;
+}
+
+.about-photo-content {
+  margin-top: 19px;
+}
+
+.about-photo-content-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: -0.01px;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.about-photo-content-text {
+  width: 300px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: -0.03px;
+  margin-top: 10px;
+}
+
+.about-photo-icon {
+  width: 154px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  opacity: 0.6;
+}
+
+.about-photo-icon a {
+  width: 32px;
+  height: 32px;
+}
+
+.about-photo-icon div:hover {
+  cursor: pointer;
+  /*opacity: 1;*/
+}
+
+.about-line {
+  width: 1020px;
+  height: 6px;
+  margin-top: 101px;
+  background-color:  #ffffff;
+}

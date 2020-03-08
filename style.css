@@ -402,6 +402,7 @@ body {
   letter-spacing: -0.03rem;
   margin-top: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .about-photo-icon {

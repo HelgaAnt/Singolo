@@ -1,2 +1,2 @@
 
-https://github.com/helgaant/singolo
+https://helgaant/github.io/singolo/index.html

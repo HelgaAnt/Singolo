@@ -1,41 +1,41 @@
 /*========== Fonts =========*/
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Regular.eot');
+  src: url('assets/fonts/Lato-Regular.eot');
   src: local('Lato Regular'), local('Lato-Regular'),
       url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Lato-Regular.woff') format('woff'),
-      url('Lato-Regular.ttf') format('truetype');
+      url('assets/fonts/Lato-Regular.woff') format('woff'),
+      url('assets/fonts/Lato-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Black.eot');
+  src: url('assets/fonts/Lato-Black.eot');
   src: local('Lato Black'), local('Lato-Black'),
       url('Lato-Black.eot?#iefix') format('embedded-opentype'),
-      url('Lato-Black.woff') format('woff'),
-      url('Lato-Black.ttf') format('truetype');
+      url('assets/fonts/Lato-Black.woff') format('woff'),
+      url('assets/fonts/Lato-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Bold.eot');
+  src: url('assets/fonts/Lato-Bold.eot');
   src: local('Lato Bold'), local('Lato-Bold'),
-      url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
-      url('Lato-Bold.woff') format('woff'),
-      url('Lato-Bold.ttf') format('truetype');
+      url('assets/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/Lato-Bold.woff') format('woff'),
+      url('assets/fonts/Lato-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Light.eot');
+  src: url('assets/fonts/Lato-Light.eot');
   src: local('Lato Light'), local('Lato-Light'),
-      url('Lato-Light.eot?#iefix') format('embedded-opentype'),
-      url('Lato-Light.woff') format('woff'),
-      url('Lato-Light.ttf') format('truetype');
+      url('assets/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/Lato-Light.woff') format('woff'),
+      url('assets/fonts/Lato-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -61,7 +61,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-align: left;
-  padding: 26px 0 0 39px;
+  padding: 28px 0 0 39px;
   letter-spacing: -0.01rem;
 }
 
@@ -82,7 +82,28 @@ body {
   list-style: none;
 }
 
-.navbar ul li a {
+/* .navbar ul li a {
+  width: 75px;
+  height: 10px;
+  font-size: 12px;
+  line-height: 6px;
+  border-radius: 20px; 
+  background-color: #2d303a;  
+  color: #ffffff;              
+  font-family: "Lato";
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+/* .navbar ul li a:hover {
+  color:#f06c64;
+  cursor: pointer;
+} */
+
+.navbar ul li  {
   width: 75px;
   height: 10px;
   font-size: 12px;
@@ -97,10 +118,16 @@ body {
   justify-content: center;
 }
 
-.navbar ul li a:hover {
+.navbar ul li.active {
   color:#f06c64;
   cursor: pointer;
 }
+
+.navbar ul li:not(.active):hover {
+  color:#f06c64;
+  cursor: pointer;
+}
+
 
 /*========== Slider ==========*/
 .slider {
@@ -162,7 +189,7 @@ body {
 }
 
 .services-text {
-  padding: 25px 0 14px 40px;
+  padding: 27px 0 14px 40px;
 }
 
 .services-text-title {
@@ -230,7 +257,7 @@ body {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   margin-top: 10px;
 }
 
@@ -270,17 +297,17 @@ body {
   margin: 0;
   padding-left: 41px;
   padding-top: 8px;
+
+  /* display: inline-block; 
+  margin-right: 3px;  */
 }
 
  .menu li {
   display: inline-block; 
-  margin-right: 3px; 
-}
-
-.menu a {
-  padding: 7px; 
+  margin-right: 3px;  
+ 
+  /* padding: 7px; 
   text-decoration: none; 
-  display: block; 
   white-space: nowrap; 
   border: 1px solid #767e9e;
   border-radius: 5px; 
@@ -290,13 +317,39 @@ body {
   font-family: "Lato";
   font-weight: 300;
   text-align: center;
+  letter-spacing: 0.035rem; */
+}
+
+.menu a {
+  padding: 7px; 
+  text-decoration: none; 
+  display: block; 
+  white-space: nowrap; 
+  border: 1px solid #767e9e;
+  border-radius: 5px;  
+  font-size: 11px;
+  line-height: 7px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: center;
   letter-spacing: 0.035rem;
  }
 
- .menu a:hover {
+/* .menu a:hover {
   border: 1px solid white;
   color: white;
- }
+ } */
+
+ .menu li a.active {
+  border: 1px solid white;
+  color: white;
+}
+
+.menu li a:not(.active):hover {
+  border: 1px solid white;
+  color: white;
+}
 
 .portfolio-image {
   width: 940px;
@@ -402,6 +455,7 @@ body {
   letter-spacing: -0.03rem;
   margin-top: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .about-photo-icon {
@@ -436,7 +490,7 @@ body {
   font-family: "Lato";
   font-weight: 900;
   text-align: left;
-  padding: 70px 0 0 40px;
+  padding: 73px 0 0 40px;
   letter-spacing: -0.01em;
 }
 
@@ -552,7 +606,7 @@ input:required:valid {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left; 
+  text-align: justify; 
   padding-top: 13px;
 }
 

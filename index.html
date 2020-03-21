@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <div class="header">
+    <header  class="header">
+      <!-- <div class="header"> -->
         <div class="logo">
           <h1><span>SINGOLO</span><span class="logo-star">*</span></h1>
         </div>
         <nav class="navbar">
           <ul id="menu">
+<<<<<<< origin/master
             <li class="active">HOME</li>
             <li>SERVICES</li>
             <li>PORTFOLIO</li>
@@ -25,13 +26,25 @@
             <li><a href="#">PORTFOLIO</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">CONTACT</a></li> -->
+=======
+            <!-- <li class="active">HOME</li>
+            <li>SERVICES</li>
+            <li>PORTFOLIO</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li> -->
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+>>>>>>> local
           </ul>
         </nav>  
-      </div>
+      <!-- </div> -->
     </header>  
  
     <main> 
-      <div class="slider">
+      <div  id="home" class="slider">
         <div class="slider-arrow">
           <div><img  src="assets/images/chev-left.png" alt="Arrow"></div>
         </div>
@@ -46,7 +59,7 @@
         </div>
       </div>  
  
-      <div class="services">
+      <div id="services" class="services">
         <div class="services-text">
           <div class="services-text-title">Our Services</div>
           <div class="services-text-text">
@@ -104,7 +117,7 @@
         </div>  
       </div>  
    
-      <div class="portfolio">
+      <div id="portfolio" class="portfolio">
         <div class="portfolio-logo">Portfolio</div>
         <div class="portfolio-text">
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -115,14 +128,37 @@
             <li>Web Desigh</li>
             <li>Graphic Design</li>
             <li>Artwork</li> -->
+<<<<<<< origin/master
             <li ><a class="active" href="#">All</a></li>
             <li><a href="#">Web Desigh</a></li>
             <li><a href="#">Graphic Design</a></li>
             <li><a href="#">Artwork</a></li>
+=======
+            <li ><a class="active" href="">All</a></li>
+            <li><a href="">Web Desigh</a></li>
+            <li><a href="">Graphic Design</a></li>
+            <li><a href="">Artwork</a></li>
+>>>>>>> local
           </ul>
         </div>
 
-        <div class=portfolio-image>
+        <div id="portfolio_image" class=portfolio-image>
+          <div><img  src="assets/images/Pic1.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic2.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic3.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic4.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic5.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic6.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic7.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic8.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic9.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic10.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic11.png" alt="Picture"></div>
+          <div><img  src="assets/images/Pic12.png" alt="Picture"></div>
+        </div>
+      </div>
+
+        <!-- <div class=portfolio-image>
           <div class="portfolio-image-block">
             <div><img  src="assets/images/Pic1.png" alt="Picture"></div>
             <div><img  src="assets/images/Pic5.png" alt="Picture"></div>
@@ -144,9 +180,9 @@
             <div><img  src="assets/images/Pic12.png" alt="Picture"></div>
           </div>
         </div>
-      </div>
+      </div> -->
      
-      <div class="about">
+      <div id="about" class="about">
         <div class="about-title">About Us</div>
         <div class="about-text">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollos, non commodo luctus, nisi eral porttitor
@@ -196,17 +232,19 @@
         </div>  
       </div>   
     
-      <div class="quote">
+      <div id="contact" class="quote">
         <div class="quote-logo">Get a Quote</div>
         <div class="quote-text">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </div>
-        <form action="" method="post" class="form">
+        <!-- <form onsubmit="return false" action="" method="post" class="form"> -->
+        <form onsubmit="return false"  method="post" class="form">
           <div class="form-input">
             <input type="text" name="Name" placeholder="Name (Required)" required pattern="^[A-Za-z ]+$" maxlength="80">
             <input type="email" name="Email" placeholder="Email (Required)" required pattern="^[A-Za-z0-9@.]+$" maxlength="50">
-            <input type="text" name="Subject" placeholder="Subject" maxlength="80">
-            <textarea  name="Message" placeholder="Discribe your project in detail" cols="30" rows="10"></textarea>  
+            <input id="subject" type="text" name="Subject" placeholder="Subject" maxlength="80">
+            <textarea  id='message' name="Message" placeholder="Discribe your project in detail" cols="30" rows="10" maxlength="10"
+            onkeypress="return isNotMax(event)"></textarea>  
           </div>  
           <div class="form-info">
             <div class="form-info-title">Contact information</div>
@@ -228,9 +266,20 @@
               </div>
             </div>
             <div>
-              <input class="form-submit" type="submit" name="batton" value="Отправить">
+              <input id="btn" class="form-submit" type="submit" name="button" value="Sent">
             </div>
           </div>   
+          <div id="message-block" class="hidden"> 
+              <div  id="window">
+                  <p>Письмо отправлено </p>
+                  <br>   
+                  <span id="text-subject"></span>
+                  <br>  
+                  <span id="text-message"></span>
+                  <br>  
+                  <button id="close-btn">OK</button>
+              </div>
+          </div>
         </form>                
       </div>
     </main>
@@ -244,7 +293,11 @@
         <div><img  src="assets/images/footer-LinkedIn.png" alt="icon"></div> 
       </div>
     </footer>  
+<<<<<<< origin/master
     
+=======
+        
+>>>>>>> local
     <script  src="script.js"></script>
   </body>
 </html>

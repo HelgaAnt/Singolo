@@ -1,41 +1,73 @@
 /*========== Fonts =========*/
 @font-face {
   font-family: 'Lato';
+<<<<<<< origin/master
   src: url('assets/fonts/Lato-Regular.eot');
   src: local('Lato Regular'), local('Lato-Regular'),
       url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
       url('assets/fonts/Lato-Regular.woff') format('woff'),
       url('assets/fonts/Lato-Regular.ttf') format('truetype');
+=======
+  src: url('../assets/fonts/Lato-Regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+      url('../Lato-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Lato-Regular.woff') format('woff'),
+      url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+>>>>>>> local
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
+<<<<<<< origin/master
   src: url('assets/fonts/Lato-Black.eot');
   src: local('Lato Black'), local('Lato-Black'),
       url('Lato-Black.eot?#iefix') format('embedded-opentype'),
       url('assets/fonts/Lato-Black.woff') format('woff'),
       url('assets/fonts/Lato-Black.ttf') format('truetype');
+=======
+  src: url('../assets/fonts/Lato-Black.eot');
+  src: local('Lato Black'), local('Lato-Black'),
+      url('../Lato-Black.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Lato-Black.woff') format('woff'),
+      url('../assets/fonts/Lato-Black.ttf') format('truetype');
+>>>>>>> local
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
+<<<<<<< origin/master
   src: url('assets/fonts/Lato-Bold.eot');
   src: local('Lato Bold'), local('Lato-Bold'),
       url('assets/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
       url('assets/fonts/Lato-Bold.woff') format('woff'),
       url('assets/fonts/Lato-Bold.ttf') format('truetype');
+=======
+  src: url('../assets/fonts/Lato-Bold.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+      url('../assets/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Lato-Bold.woff') format('woff'),
+      url('../assets/fonts/Lato-Bold.ttf') format('truetype');
+>>>>>>> local
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
+<<<<<<< origin/master
   src: url('assets/fonts/Lato-Light.eot');
   src: local('Lato Light'), local('Lato-Light'),
       url('assets/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
       url('assets/fonts/Lato-Light.woff') format('woff'),
       url('assets/fonts/Lato-Light.ttf') format('truetype');
+=======
+  src: url('../assets/fonts/Lato-Light.eot');
+  src: local('Lato Light'), local('Lato-Light'),
+      url('../assets/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Lato-Light.woff') format('woff'),
+      url('../ssets/fonts/Lato-Light.ttf') format('truetype');
+>>>>>>> local
   font-weight: 300;
   font-style: normal;
 }
@@ -44,15 +76,28 @@
 body {
   width: 1020px;
   font-family: Lato, sans-serif;
+ 
+  
 }
 
 /*========== Header ==========*/
+
 .header {
+  
   display: flex;
+  /* width: 1020px; */
   justify-content: space-between;
-  height: 95px; 
+  height: 89px; 
+  width: 1020px;
   background-color: #2d303a;  
-  box-shadow: 0 6px 0 0 #323746;  
+  border-bottom: 6px solid #323746; 
+  position: fixed;  /*sticky;*/
+  top: 0;
+  left: 8;
+  z-index: 5;
+  /*position: -webkit-sticky;*/
+  /* top: 0;  */
+
 }
 
 .logo {
@@ -112,28 +157,68 @@ body {
   background-color: #2d303a;  
   color: #ffffff;              
   font-family: "Lato";
-  font-weight: 700;
+  font-weight: bold;   /*700; */
   text-decoration: none;
   align-items: center;
   justify-content: center;
 }
 
-.navbar ul li.active {
+
+/* .navbar ul li a:hover {
+  color:#f06c64;
+  cursor: pointer;
+} */
+
+/* .navbar ul li  {
+  width: 75px;
+  height: 10px;
+  font-size: 12px;
+  line-height: 6px;
+  border-radius: 20px; 
+  background-color: #2d303a;  
+  color: #ffffff;              
+  font-family: "Lato";
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+} */
+
+.navbar ul li a.active {
   color:#f06c64;
   cursor: pointer;
 }
 
+<<<<<<< origin/master
+.navbar ul li.active {
+=======
+.navbar ul li a:not(.active):hover {
+>>>>>>> local
+  color:#f06c64;
+  cursor: pointer;
+}
+
+<<<<<<< origin/master
 .navbar ul li:not(.active):hover {
   color:#f06c64;
   cursor: pointer;
 }
 
 
+=======
+main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+>>>>>>> local
 /*========== Slider ==========*/
 .slider {
+  scroll-margin-top: 89px;
   height: 593px;
   background-color: #f06c64;
   margin: auto;
+  margin-top: 89px;
   width: 100%;
   border-bottom: 6px solid #f55d55;
   display: flex;
@@ -186,6 +271,7 @@ body {
   margin: auto;
   background-color: rgb(242, 242, 242);
   box-shadow: 0 6px 0 0 #ffffff; 
+  scroll-margin-top: 89px;
 }
 
 .services-text {
@@ -265,7 +351,9 @@ body {
 .portfolio {
   height: 870px;
   background-color:  #2d303a;
-  box-shadow: 0 6px 0 0 #323746; 
+  border-bottom: 6px solid #323746; 
+  scroll-margin-top: 89px;
+ 
 }
 
 .portfolio-logo {
@@ -353,13 +441,23 @@ body {
 
 .portfolio-image {
   width: 940px;
-  margin-left: 39px;
+  height: 602px;
+  margin-left: 40px;
   margin-top: 18px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
-.portfolio-image-block {
+.portfolio-image img {
+  margin-bottom: 15px;
+  width: 220px;
+  height: 187px;
+  overflow: hidden;
+}
+
+/* .portfolio-image-block {
   width: 220px;
   height: 616px;
   overflow: hidden;
@@ -370,10 +468,11 @@ body {
   height: 187px;
   margin-right: 5px;
   margin-bottom: 15px;
-}
+} */
 
 /*========== AboutUs ==========*/
 .about {
+  scroll-margin-top: 89px;
   height: 732px;  
   margin: auto;
   background-color: #f2f2f2;
@@ -478,6 +577,8 @@ body {
 
 /*========== Quote ==========*/
 .quote {
+  scroll-margin-top: 89px;
+ 
   height: 656px;
   background-color: #f06c64;
   box-shadow: 0 6px 0 0 #ea676b; 
@@ -652,6 +753,35 @@ input:required:valid {
   background-color: grey;
 }
 
+#message-block {
+  position:absolute;
+  width: 1020px;
+  height: 658px;
+  z-index: 3;
+  margin-left: 8px;
+  top: 2713px;
+  left: 0;
+  background:  #0008;
+}
+
+#message-block.hidden {
+  display: none;
+}
+
+#window {
+  position: absolute;
+  z-index: 3;
+  /*top: 20px;
+  left: 20px;*/
+  background-color: #f0d8d9;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#window span {
+ text-align: left;
+}
 /*========== Footer ==========*/
 .footer {
   height: 76px;

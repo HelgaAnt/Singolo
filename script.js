@@ -6,10 +6,28 @@ const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 
 
+/*MENU.addEventListener('click', (event) => {
+    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+  
+    event.target.classList.add('active');
+});*/  
+
 MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
-});   
+}); 
+
+const ANCHORS = document.querySelectorAll('a[href*="#"]')
+for (let anchor of ANCHORS) {
+    anchor.addEventListener('click', event => {
+        event.preventDefault()
+        const curr = anchor.getAttribute('href').substr(1)
+        document.getElementById(curr).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
 
 document.addEventListener('scroll', onScroll);
 

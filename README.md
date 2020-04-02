@@ -1,4 +1,4 @@
 # singolo
-https://helgaant/github.io/Singolo/
+https://helgaant.github.io/Singolo/
 
 
